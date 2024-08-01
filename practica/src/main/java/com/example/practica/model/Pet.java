@@ -1,10 +1,7 @@
 package com.example.practica.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,6 +18,9 @@ public class Pet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
-    private int dni;
-    private boolean gey;
+    private String lengPro1;
+    private String lengPro2;
+    private String lengPro3;
+    //@Column(nullable = true)  ==> en caso quieras agregar una columna mas a la base datos, esta linea te ayudara a inplementarlo (validara valores nulos =null)
+    private String baseDato;
 }
