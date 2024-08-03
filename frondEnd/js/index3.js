@@ -12,8 +12,10 @@ let registrarPelicula = async () => {
 
 
     campos.nombre = document.getElementById("nombre").value;
-    campos.dni = document.getElementById("dni").value;
-    campos.genero = document.getElementById("genero").value;
+    campos.lengPro1 = document.getElementById("lengPro1").value;
+    campos.lengPro2 = document.getElementById("lengPro2").value;
+    campos.lengPro3 = document.getElementById("lengPro3").value;
+    campos.baseDato = document.getElementById("baseDato").value;
 
 
     const peticion = await fetch("http://localhost:8080/guardar",
