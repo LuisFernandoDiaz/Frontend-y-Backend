@@ -19,11 +19,13 @@ public class petController {
         this._petServices=petServices;
     }
 
+    @CrossOrigin("*")
     @GetMapping("/listado")
     public List<Pet> getAll(){
         return _petServices.GetAllPets();
     }
 
+    @CrossOrigin("*")
     @GetMapping("/buscar/{id}")
     public Pet getAll(@PathVariable int id){
         return _petServices.BuscarPets(id);
