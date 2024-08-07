@@ -26,7 +26,7 @@ let registrarPelicula = async () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(campos)
-        });
 
+        });
 
 }

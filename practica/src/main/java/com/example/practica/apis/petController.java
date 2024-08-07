@@ -37,11 +37,13 @@ public class petController {
         return _petServices.GuardarPet(entity);
     }
 
+    @CrossOrigin("*")
     @PutMapping("/modificar/{id}")
     public Pet ModificarPet(@PathVariable int id, @RequestBody Pet entity){
         return _petServices.ModificarPet(entity);
     }
 
+    @CrossOrigin("*")
     @DeleteMapping("/eliminar/{id}")
     public void eliminarPet(@PathVariable Integer id ){
          _petServices.EliminarPet(id);

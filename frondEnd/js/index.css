@@ -81,3 +81,7 @@ label {
     font-size: 15px;
     padding: 5px;
 }
+
+#formulario {
+    visibility: hidden;
+}
