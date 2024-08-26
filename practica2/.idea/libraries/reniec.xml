@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="reniec">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/reniec.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
