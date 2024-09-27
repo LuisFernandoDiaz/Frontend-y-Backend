@@ -10,6 +10,6 @@ public interface IPetServices {
     List<Pet> GetAllPets();
     Pet GuardarPet(Pet entity);
     Pet BuscarPets(int id);
-    Pet ModificarPet( Pet entity);
+    Pet ModificarPet(int id, Pet entity) ;
     public void EliminarPet( Integer id);
 }

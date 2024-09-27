@@ -21,13 +21,13 @@ public class petController {
 
     @CrossOrigin("*")
     @GetMapping("/listado")
-    public List<Pet> getAll(){
+    public List<Pet> listado(){
         return _petServices.GetAllPets();
     }
 
     @CrossOrigin("*")
     @GetMapping("/buscar/{id}")
-    public Pet getAll(@PathVariable int id){
+    public Pet buscar(@PathVariable int id){
         return _petServices.BuscarPets(id);
     }
 
@@ -39,8 +39,8 @@ public class petController {
 
     @CrossOrigin("*")
     @PutMapping("/modificar/{id}")
-    public Pet ModificarPet(@PathVariable int id, @RequestBody Pet entity){
-        return _petServices.ModificarPet(entity);
+    public Pet ModificarPet(@PathVariable int id,@RequestBody Pet entity){
+        return _petServices.ModificarPet(id, entity );
     }
 
     @CrossOrigin("*")

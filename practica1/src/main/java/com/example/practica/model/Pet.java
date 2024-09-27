@@ -24,3 +24,5 @@ public class Pet {
     //@Column(nullable = true)  ==> en caso quieras agregar una columna mas a la base datos, esta linea te ayudara a inplementarlo (validara valores nulos =null)
     private String baseDato;
 }
+
+

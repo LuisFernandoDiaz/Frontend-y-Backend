@@ -43,14 +43,15 @@ public class PetServices implements IPetServices {
     }
 
     @Override
-    public Pet ModificarPet( Pet entity) {
-        Pet petModificado = _perRepository.save(entity);
-        return petModificado;
+    public Pet ModificarPet(int id, Pet entity) {
+        //Pet buscar = _perRepository.findById(id).get();
+        return  _perRepository.save(entity);
     }
+
 
     @Override
     public void EliminarPet(Integer id) {
-         _perRepository.deleteById(id);
+        _perRepository.deleteById(id);
     }
 
 }
